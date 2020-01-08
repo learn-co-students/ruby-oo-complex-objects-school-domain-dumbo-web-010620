@@ -21,11 +21,11 @@ class School
   end
   
   def sort
-    sorted = {}
-    @roster.each do |grade, name|
-      sorted[grade] = name.sort
+    sorted = {}                             # new hash
+    @roster.each do |grade, name|           # goes over each grade
+      sorted[grade] = name.sort             # sort names in each array
     end
-    sorted
+    sorted                                  # return to save changes
   end
   
 end
